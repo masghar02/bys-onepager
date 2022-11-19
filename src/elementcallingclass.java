@@ -67,6 +67,7 @@ public class elementcallingclass extends enviornmentSetup{
         Thread.sleep(2000);
         envsetup.wd.findElement(By.id("step3-cta-next")).click();
         Thread.sleep(2000);
+        //brighton address
     }
     //    public  void addressline1(){
 //        envsetup.wd.findElement(By.xpath("//body[1]/main[1]/div[1]/div[3]/div[1]/form[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/ul[1]/li[2]")).click();

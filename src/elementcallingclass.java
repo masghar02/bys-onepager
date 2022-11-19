@@ -39,7 +39,6 @@ public class elementcallingclass extends enviornmentSetup{
         //6 months promotion
         envsetup.wd.findElement(By.xpath("//body[1]/section[2]/div[1]/div[1]/div[2]/ul[1]/li[3]")).click();
         Thread.sleep(1000);
-
         envsetup.wd.findElement(By.xpath("//button[@id='step2-cta-next']")).click();
         Thread.sleep(3000);
     }

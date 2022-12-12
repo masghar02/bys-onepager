@@ -2,25 +2,28 @@ public class Main {
     public static void main(String[] args)  throws InterruptedException {
 
 
-            elementcallingclass stored_elements = new elementcallingclass();
-//            stored_elements.storedEnvironment();
-            Thread.sleep(5000);
-            stored_elements.GetPostcode();
-            Thread.sleep(5000);
-            stored_elements.Unitsection();
-            Thread.sleep(5000);
-            stored_elements.Monthsection();
-            Thread.sleep(5000);
-            stored_elements.Addressanddetailsection();
-            Thread.sleep(5000);
-            stored_elements.Datetimeseciton();
-            Thread.sleep(5000);
-            stored_elements.Packingassistanceandmoverssection();
-            Thread.sleep(5000);
-            stored_elements.Continuetoreservation();
-            Thread.sleep(25000);
-            stored_elements.closedriver();
-            System.out.println("Successfully run");
+            try {
+                    elementcallingclass stored_elements = new elementcallingclass();
+                    Thread.sleep(5000);
+                    stored_elements.GetPostcode();
+                    Thread.sleep(5000);
+                    stored_elements.Unitsection();
+                    Thread.sleep(10000);
+                    stored_elements.Monthsection();
+                    Thread.sleep(5000);
+                    stored_elements.Addressanddetailsection();
+                    Thread.sleep(5000);
+                    stored_elements.Datetimeseciton();
+                    Thread.sleep(5000);
+                    stored_elements.Packingassistanceandmoverssection();
+                    Thread.sleep(5000);
+                    stored_elements.Continuetoreservation();
+                    Thread.sleep(25000);
+//            stored_elements.closedriver();
+                    System.out.println("Successfully run");
+            }catch (Throwable e) {
+                    System.out.println(e.getMessage());
+            }
 //            stored_elements.GetPostcode();
 //            Thread.sleep(1000);
 //            stored_elements.Step1flow();

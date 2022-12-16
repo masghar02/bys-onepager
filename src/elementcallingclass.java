@@ -27,23 +27,23 @@ public class elementcallingclass extends enviornmentSetup{
         JavascriptExecutor js = (JavascriptExecutor) envsetup.wd;
         js.executeScript("window.scrollBy(0,450)");
         //25 Sq.ft
-//        envsetup.wd.findElement(By.xpath
-//                ("//body/section[@id='section1']/div[1]/div[1]/div[3]/div[1]/div[1]/div[4]/div[1]")).click();
-//        Thread.sleep(3000);
+        envsetup.wd.findElement(By.xpath
+                ("//body/section[@id='section1']/div[1]/div[1]/div[3]/div[1]/div[1]/div[4]/div[1]")).click();
+        Thread.sleep(3000);
         // 75Sq.ft
-        envsetup.wd.findElement(By.xpath("//body/section[@id='section1']/div[1]/div[1]/div[3]/div[2]/div[2]")).click();
-        Thread.sleep(2000);
-        envsetup.wd.findElement(By.xpath("//body/section[@id='section1']/div[1]/div[1]/div[3]/div[1]/div[1]/div[6]/div[1]")).click();
+//        envsetup.wd.findElement(By.xpath("//body/section[@id='section1']/div[1]/div[1]/div[3]/div[2]/div[2]")).click();
+//        Thread.sleep(2000);
+//        envsetup.wd.findElement(By.xpath("//body/section[@id='section1']/div[1]/div[1]/div[3]/div[1]/div[1]/div[6]/div[1]")).click();
         envsetup.wd.findElement(By.id("step1-cta-next")).click();
         Thread.sleep(3000);
     }
     public  void Monthsection () throws InterruptedException{
         //Month to Month promotion
 
-        envsetup.wd.findElement(By.xpath("//body/section[@id='section2']/div[1]/div[1]/div[1]/ul[1]/li[1]")).click();
+//        envsetup.wd.findElement(By.xpath("//body/section[@id='section2']/div[1]/div[1]/div[1]/ul[1]/li[1]")).click();
         Thread.sleep(3000);
         //6 months promotion
-//        envsetup.wd.findElement(By.xpath("//body[1]/section[2]/div[1]/div[1]/div[1]/ul[1]/li[3]")).click();
+        envsetup.wd.findElement(By.xpath("//body[1]/section[2]/div[1]/div[1]/div[1]/ul[1]/li[3]")).click();
 //        Thread.sleep(1000);
         envsetup.wd.findElement(By.xpath("//button[@id='step2-cta-next']")).click();
         Thread.sleep(3000);
@@ -65,11 +65,11 @@ public class elementcallingclass extends enviornmentSetup{
         Thread.sleep(2000);
         envsetup.wd.findElement(By.id("fname")).sendKeys("Asghar");
         Thread.sleep(2000);
-        envsetup.wd.findElement(By.id("lname")).sendKeys("9Sqa2");
+        envsetup.wd.findElement(By.id("lname")).sendKeys("25Sqa");
         Thread.sleep(2000);
-        envsetup.wd.findElement(By.id("email")).sendKeys(envsetup.Randomemail());
+        envsetup.wd.findElement(By.id("email")).sendKeys(envsetup.email);
         Thread.sleep(2000);
-        envsetup.wd.findElement(By.id("phone")).sendKeys(envsetup.Randonumber());
+        envsetup.wd.findElement(By.id("phone")).sendKeys("7410147852");
         Thread.sleep(2000);
         envsetup.wd.findElement(By.id("step3-cta-next")).click();
         Thread.sleep(2000);
@@ -89,7 +89,7 @@ public class elementcallingclass extends enviornmentSetup{
 //        envsetup.wd.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
 //    }
     public void Datetimeseciton() throws InterruptedException{
-        envsetup.wd.findElement(By.xpath("//tbody/tr[3]/td[5]")).click();
+        envsetup.wd.findElement(By.xpath("//tbody/tr[4]/td[2]")).click();
         Thread.sleep(5000);
         envsetup.wd.findElement(By.xpath("//body[1]/section[4]/div[2]/div[1]/ul[1]/li[1]")).click();
         Thread.sleep(2000);

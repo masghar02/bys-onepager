@@ -67,7 +67,7 @@ public class elementcallingclass extends enviornmentSetup{
         Thread.sleep(2000);
         envsetup.wd.findElement(By.id("lname")).sendKeys("25Sqa");
         Thread.sleep(2000);
-        envsetup.wd.findElement(By.id("email")).sendKeys(envsetup.email);
+        envsetup.wd.findElement(By.id("email")).sendKeys(envsetup.Randomemail());
         Thread.sleep(2000);
         envsetup.wd.findElement(By.id("phone")).sendKeys("7410147852");
         Thread.sleep(2000);

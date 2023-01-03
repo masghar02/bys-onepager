@@ -46,7 +46,7 @@ public class enviornmentSetup extends chromedriver {
             sb.append(randomChar);
         }
         String randomString = sb.toString().toLowerCase();
-        return randomString+"@gmail.com";
+        return randomString+"@bystored.com";
 //        System.out.println("Random String is: " + randomString);
     }
 
